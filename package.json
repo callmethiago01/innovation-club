@@ -1,0 +1,18 @@
+{
+  "name": "innovation-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch-path=controllers --watch-path=middleware --watch-path=routes --watch-path=services --watch-path=validators --watch-path=scripts --watch-path=server.js --watch-path=db.js server.js",
+    "create-admin": "node scripts/create-admin.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^10.2.1",
+    "pg": "^8.13.1"
+  }
+}
